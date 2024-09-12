@@ -1,18 +1,23 @@
-import RecipeCard from "../../components/RecipeCard/RecipeCard";
-import './RecipeCardCont.scss';
+import WineCard from '../../components/WineCard/WineCard';
+import Wines from './../../data/Types/Wines';
+import './WineCardCont.scss';
 
-type RecipeCardContProps = {
-    data: recipes[];
+type WineCardContProps = {
+    data: Wines[];
 }
 
-const RecipeCardCont = ({data}: RecipeCardContProps)=> {
+const WineCardCont = ({data}: WineCardContProps)=> {
     
     return (
-        <section className='recipe-card-container'/>
-        {data.map((recipes: recipes) => {
-            return (
-                <Link key=()
-            )
-        })}
+        <section className='wine-card-container'>
+            {data.map((wines: Wines) => {
+                return (
+                
+                    <WineCard key={wines.id} wines={wines} />
+                    
+                )
+            })}
+        </section>
     )
 }
+export default WineCardCont
