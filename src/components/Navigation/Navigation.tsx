@@ -11,18 +11,20 @@ const Navigation = () => {
     <nav className='navigation-display'>
         <h2 className='navigation-display__header'>Filters</h2>
         <div className='side-panel__button-container'>
-            <h2 className='navigation-display__button-header'>Meal Type</h2>
+            <h2 className='navigation-display__button-header'>Region</h2>
             <div className='nav-button-container'>
-                <Buttons label="Breakfast"/>
-                <Buttons label="Lunch"/>
+                <Buttons label="America"/>
+                <Buttons label="South Africa"/>
                 <Buttons label="Dinner"/>
                 <Buttons label="Snack"/>
             </div>
-            <h2 className='navigation-display__button-header'>Nutrition</h2>
+            <h2 className='navigation-display__button-header'>Rating</h2>
             <div className='nav-button-container'>
-                <Buttons label="Under 500 Cals"/>
-                <Buttons label="Under 800 Cals"/>
-                <Buttons label="Under 1000 Cals"/>
+                <Buttons label="1 Star"/>
+                <Buttons label="2 Star"/>
+                <Buttons label="3 Star"/>
+                <Buttons label="4 Star"/>
+                <Buttons label="5 Star"/>
             </div>
             <h2 className='navigation-display__button-header'>Dietaries</h2>
             <div className='nav-button-container'>
