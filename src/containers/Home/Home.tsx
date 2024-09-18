@@ -5,7 +5,7 @@ const Home = () => {
 const navigate = useNavigate();
 
   const navigateToWineLibrary = () => {
-    navigate('/wines');
+    navigate('./wines');
   };
 
   return (

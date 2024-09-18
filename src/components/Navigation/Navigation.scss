@@ -62,13 +62,14 @@ h2 {
 .nav-button-container__lower {
 justify-content: center;
 align-items: center;
+margin: 3%;
 }
 
 .other-buttons {
     display: inline-flex;
     background-color: $indigo;
     padding: 5%;
-    margin: 3px;
+    margin: 4px;
     color: white;
     font-size: 15px; 
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;

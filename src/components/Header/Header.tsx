@@ -35,10 +35,10 @@ const Header = () => {
         <nav className='navbar'>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="./grapes-react-project/">Home</Link>
           </li>
           <li>
-            <Link to="/wines">Wine Library</Link>
+            <Link to="./grapes-react-project/wines">Wine Library</Link>
           </li>
         </ul>
       </nav>

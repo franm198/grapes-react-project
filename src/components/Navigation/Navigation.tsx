@@ -118,6 +118,7 @@ const Navigation: React.FC<NavigationProps> = ({ getYearFromButton, wines, setFi
           ))}
         </div>
 
+        <h2 className='navigation-display__button-header'>Randomise or Reset</h2>
         <div className='nav-button-container__lower'>
           <button className='other-buttons' onClick={randomizeWine}>Find me something new!</button>
         </div>
