@@ -16,7 +16,7 @@ type NavigationProps = {
   handleRegionFilter: (country: string) => void;
 };
 
-const Navigation: React.FC<NavigationProps> = ({ getYearFromButton, wines, setFilteredWines, setWines, whiteWine, redWine, sparklingWine, regions, filteredWines,
+const Navigation: React.FC<NavigationProps> = ({ getYearFromButton, wines, setFilteredWines, whiteWine, redWine, sparklingWine, regions, filteredWines,
   handleRegionFilter }) => {
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [selectedRegion, setSelectedRegion] = useState<string>('');

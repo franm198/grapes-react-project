@@ -11,11 +11,11 @@ import Footer from './components/Footer/Footer';
 const App = () => {
   const [wines, setWines] = useState<Wines[]>([]);
   const [filteredWines, setFilteredWines] = useState<Wines[]>([]);
-  const [year, setYear] = useState<number>(2024);
+  const [, setYear] = useState<number>(2024);
   const [redWine, setRedWine] = useState<Wines[]>([]);
   const [whiteWine, setWhiteWine] = useState<Wines[]>([]);
   const [sparklingWine, setSparklingWine] = useState<Wines[]>([]);
-  const [regions, setRegions] = useState<string[]>([]);
+  // const [regions, setRegions] = useState<string[]>([]);
   const [countries] = useState<string[]>(['France', 'Italy', 'Spain', 'South Africa', 'United States']);
 
 
@@ -79,9 +79,6 @@ const App = () => {
     });
   };
 
-  const filterByRegion = (wineArray: Wines[], region: string) => {
-    return wineArray.filter(wine => wine.location.toLowerCase() === region.toLowerCase());
-  };
 
   const getYearFromButton = (year: number) => {
     setYear(year);

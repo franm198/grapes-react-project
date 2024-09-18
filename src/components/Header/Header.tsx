@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import GrapesBrand from '../../assets/web-logo.png'
 import './Header.scss'
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
