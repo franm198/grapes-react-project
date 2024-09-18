@@ -40,6 +40,9 @@ const Header = () => {
           <li>
             <Link to="./grapes-react-project/wines">Wine Library</Link>
           </li>
+          <li>
+            <Link to="mailto:grapes@fantasticwine.com">Contact Us</Link>
+          </li>
         </ul>
       </nav>
       </div>

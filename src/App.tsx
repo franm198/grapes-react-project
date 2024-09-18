@@ -15,7 +15,6 @@ const App = () => {
   const [redWine, setRedWine] = useState<Wines[]>([]);
   const [whiteWine, setWhiteWine] = useState<Wines[]>([]);
   const [sparklingWine, setSparklingWine] = useState<Wines[]>([]);
-  // const [regions, setRegions] = useState<string[]>([]);
   const [countries] = useState<string[]>(['France', 'Italy', 'Spain', 'South Africa', 'United States']);
 
 
