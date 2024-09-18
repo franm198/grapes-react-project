@@ -1,3 +1,48 @@
+@use "../../assets/styles/_variables.scss" as *;
+
 .navigation-button {
     padding: 0;
+    
 }
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../assets/Purple\ Grape\ Background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+        padding-top: 250px; 
+  }
+  
+  .homepage-title {
+    font-size: 7rem;
+    margin-bottom: 1rem;
+    font-family: 'Quattrocento';
+    color: white;
+
+  }
+  
+  .homepage-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #c7c4c4;
+  }
+  
+  .homepage-button {
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: transparent;  
+    border: 2px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: $darkplum;
+    }
+  }
