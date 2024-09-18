@@ -1,5 +1,5 @@
 type Wines = {
-    type: 'red' | 'white' | 'sparkling'; // Adjust as needed
+    type: 'red' | 'white' | 'sparkling';
     winery: string;
     wine: string;
     rating: Rating;
