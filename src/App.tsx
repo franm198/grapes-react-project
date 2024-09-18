@@ -98,9 +98,9 @@ const App = () => {
       <>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/grapes-react-project/" element={<Home />} />
           <Route
-            path="/wines"
+            path="/grapes-react-project/wines"
             element={
               <>
                 <main>
