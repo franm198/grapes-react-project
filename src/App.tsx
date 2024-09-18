@@ -113,7 +113,7 @@ const App = () => {
                     redWine={redWine}
                     sparklingWine={sparklingWine}
                     regions={countries}
-                    handleRegionFilter={handleRegionFilter} filteredWines={[]}                />
+                    handleRegionFilter={handleRegionFilter} filteredWines={[]} />
                 <WineCardCont data={filteredWines} />
                 </main>
               </>
