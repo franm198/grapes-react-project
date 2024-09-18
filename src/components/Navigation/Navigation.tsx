@@ -21,22 +21,23 @@ const Navigation: React.FC<NavigationProps> = ({ getYearFromButton, wines, setFi
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [selectedRegion, setSelectedRegion] = useState<string>('');
 
+  const filterWines = () => {
+    let filtered = filteredWines.length > 0 ? filteredWines : wines;
+
+    if (searchTerm) {
+      filtered = filtered.filter(
+        (wine) =>
+          wine.wine.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          wine.location.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
+    setFilteredWines(filtered);
+  };
+  
   useEffect(() => {
-    const filterWines = () => {
-      let filtered = filteredWines.length > 0 ? filteredWines : wines;
-
-      if (searchTerm) {
-        filtered = filtered.filter(
-          (wine) =>
-            wine.wine.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            wine.location.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-      }
-      setFilteredWines(filtered);
-    };
-
     filterWines();
-  }, [searchTerm, filteredWines, wines, setFilteredWines]);
+
+  }, [searchTerm]);
 
   const handleFilterRedWines = () => {
     setFilteredWines(redWine);
